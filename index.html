@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div id="wrapper" class="wrap main">
+    <div class="header_wrap">
+      <div class="header-gnb-top">
+        <div class="header-gnb-box">
+          <ul>
+            <li>
+              <a href="#none" style="margin-right: 0;">회원가입</a>
+              <span>/</span>
+              <a href="#none" style="margin-left: 0;">로그인</a>
+            </li>
+            <li><a href="#none">공지사항</a></li>
+            <li><a href="#none">고객결제</a></li>
+            <li><a href="#none">매장안내</a></li>
+            <li><a href="#none">고객센터</a></li>
+            <li><a href="#none">즐겨찾기</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- header gnb top 끝 -->
+
+      <div class="header-gnb-bottom">
+
+        <div class="logo">
+          <a href="#none">
+            <img src="http://cherish2.godohosting.com/cgagu/mimg/logo_170908_new.png" alt="">
+          </a>
+        </div>
+
+        <div class="gnb-menu">
+          <ul>
+            <li><a href="#none">쇼핑</a></li>
+            <li><a href="#none">이벤트</a></li>
+            <li><a href="#none">스타일링</a></li>
+            <li><a href="#none">쇼핑몰</a></li>
+            <li><a href="#none">커뮤니티</a></li>
+          </ul>
+        </div>
+
+        <div class="search">
+          <a href="#none">
+            <img src="http://cherish2.godohosting.com/cgagu/mimg/top_icon_search01_new.png" alt="">
+          </a>
+
+          <div class="search-form">
+            <form action="" name="search">
+              <fieldset>
+                <input name="search" class="head-search">
+                <a href="#none">
+                  <input type="image" class="btn-search" src="http://cherish2.godohosting.com/cgagu/mimg/top_icon_search01_new.png">
+                </a>
+              </fieldset>
+            </form>
+            <a href="#none" class="btn-close">X</a>
+          </div>
+        </div>
+
+        <div class="bag">
+          <a href="#none">
+            <img src="http://cherish2.godohosting.com/cgagu/mimg/top_icon_search01_new.png" alt="">
+          </a>
+        </div>
+      </div>
+      <!-- header gnb bottom 끝 -->
+    </div>
+    <!-------------- header wrapper 끝-------------->
+    <!-- --------------------------공통부분 끝-------------------------- -->
+
+
+    <!-- main slide 시작 -->
+    <div class="slide-container">
+      <div class="slide-container-box">
+        <div class="slide-item">
+          <img class="slide-img" src="img/cat1.jpg" alt="">
+          <div class="slide-text">
+            <p class="s-title">index1</p>
+            <span class="hr"></span>
+            <p class="m-title">hello.</p>
+            <span class="hr-none"></span>
+            <p class="l-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />Totam eius, et eos repellendus odio cum assumenda magnam cupiditate.</p>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <img class="slide-img" src="img/flower1.jpg" alt="">
+          <div class="slide-text">
+            <p class="s-title">index1</p>
+            <span class="hr"></span>
+            <p class="m-title">hello.</p>
+            <span class="hr-none"></span>
+            <p class="l-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />Totam eius, et eos repellendus odio cum assumenda magnam cupiditate.</p>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <img class="slide-img" src="img/flower2.jpg" alt="">
+          <div class="slide-text">
+            <p class="s-title">index1</p>
+            <span class="hr"></span>
+            <p class="m-title">hello.</p>
+            <span class="hr-none"></span>
+            <p class="l-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />Totam eius, et eos repellendus odio cum assumenda magnam cupiditate.</p>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <img class="slide-img" src="img/flower3.jpg" alt="">
+          <div class="slide-text">
+            <p class="s-title">index1</p>
+            <span class="hr"></span>
+            <p class="m-title">hello.</p>
+            <span class="hr-none"></span>
+            <p class="l-title">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />Totam eius, et eos repellendus odio cum assumenda magnam cupiditate.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="dotcontainer">
+        <span class="dotbtn" onclick="dot(0)"></span>
+        <span class="dotbtn" onclick="dot(1)"></span>
+        <span class="dotbtn" onclick="dot(2)"></span>
+        <span class="dotbtn" onclick="dot(3)"></span>
+      </div>
+
+      <div class="slide-btn">
+        <button id="slide-btn-left"></button>
+        <button id="slide-btn-right"></button>
+      </div>
+
+    </div>
+
+
+    <!-------------- main slide 끝-------------->
+
+    <!-------------- tab menu 시작-------------->
+    <div class="content-tab">
+      <div class="content-tab-box">
+        <div class="tab-title">
+          <p>event</p>
+          <span>탭메뉴를 만들어 봅시다</span>
+        </div>
+        <div class="tab-box">
+          <div class="tab-menu">
+            <!-- 탭 메뉴 문구 -->
+            <a onclick="tabshowing(0)" class="tab-click-btn tab-click-btns active">이슈아이템</a>
+            <a onclick="tabshowing(1)" class="tab-click-btn">베스트 셀러</a>
+            <a onclick="tabshowing(2)" class="tab-click-btn">인기 급상승</a>
+            <a onclick="tabshowing(3)" class="tab-click-btn">신제품</a>
+          </div>
+
+          <div class="tab-bx">
+            <div class="tab-bx-full">
+              <ul class="tab-slide">
+                <li class="tab-open tab-opens">
+                  <div class="sub-img">
+                    <a href="#none">
+                      <img src="img/cat1.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="sub-item-box">
+                    <ul>
+                      <li>
+                        <div class="sale-icon">10%</div>
+                        <a href="#none">
+                          <img src="img/flower1.jpg" alt="">
+                        </a>
+                        <p><span>[파격특가]</span> [디자인침대디자인침대]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+
+                      <li>
+                        <div class="sale-icon">10%</div>
+                        <a href="#none">
+                          <img src="img/flower1.jpg" alt="">
+                        </a>
+                        <p><span>[파격특가]</span> [디자인침대디자인침대]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+
+                      <li>
+                        <div class="sale-icon">10%</div>
+                        <a href="#none">
+                          <img src="img/flower1.jpg" alt="">
+                        </a>
+                        <p><span>[파격특가]</span> [디자인침대디자인침대]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="tab-open">
+                  <div class="sub-img">
+                    <a href="#none">
+                      <img src="img/flower1.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="sub-item-box">
+                    <ul>
+                      <li>
+                        <div class="sale-icon">10%</div>
+                        <a href="#none">
+                          <img src="img/flower2.jpg" alt="">
+                        </a>
+                        <p><span>[파격특가]</span> [디자인침대디자인침대]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+
+                      <li>
+                        <div class="sale-icon">10%</div>
+                        <a href="#none">
+                          <img src="img/flower2.jpg" alt="">
+                        </a>
+                        <p><span>[파격특가]</span> [디자인침대디자인침대]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+
+                      <li>
+                        <div class="sale-icon">10%</div>
+                        <a href="#none">
+                          <img src="img/flower2.jpg" alt="">
+                        </a>
+                        <p><span>[파격특가]</span> [디자인침대디자인침대]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="tab-open">
+                  <div class="sub-img">
+                    <a href="#none">
+                      <img src="img/flower2.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="sub-item-box">
+                    <ul>
+                      <li>
+                        <div class="sale-icon">10%</div>
+                        <a href="#none">
+                          <img src="img/flower3.jpg" alt="">
+                        </a>
+                        <p><span>[파격특가]</span> [디자인침대디자인침대]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+
+                      <li>
+                        <div class="sale-icon">10%</div>
+                        <a href="#none">
+                          <img src="img/flower3.jpg" alt="">
+                        </a>
+                        <p><span>[파격특가]</span> [디자인침대디자인침대]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+
+                      <li>
+                        <div class="sale-icon">10%</div>
+                        <a href="#none">
+                          <img src="img/flower3.jpg" alt="">
+                        </a>
+                        <p><span>[파격특가]</span> [디자인침대디자인침대]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="tab-open">
+                  <div class="sub-img">
+                    <a href="#none">
+                      <img src="img/flower3.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="sub-item-box">
+                    <ul>
+                      <li>
+                        <div class="sale-icon">10%</div>
+                        <a href="#none">
+                          <img src="img/flower1.jpg" alt="">
+                        </a>
+                        <p><span>[파격특가]</span> [디자인침대디자인침대]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+
+                      <li>
+                        <div class="sale-icon">10%</div>
+                        <a href="#none">
+                          <img src="img/flower1.jpg" alt="">
+                        </a>
+                        <p><span>[파격특가]</span> [디자인침대디자인침대]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+
+                      <li>
+                        <div class="sale-icon">10%</div>
+                        <a href="#none">
+                          <img src="img/flower1.jpg" alt="">
+                        </a>
+                        <p><span>[파격특가]</span> [디자인침대디자인침대]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------- tab2 시작-------------->
+
+
+    <div class="content-tab content-tab-height-800">
+      <div class="content-tab-box bg-none">
+        <div class="tab-title">
+          <p>design</p>
+          <span>디자인을 만들어 봅시다</span>
+        </div>
+        <div class="tab-box tab-box2">
+
+          <div class="tab-box-flex1">
+            <img src="img/cat1.jpg" alt="">
+            <a href="#none">more view</a>
+          </div>
+
+          <div class="tab-box-flex-right">
+            <img src="img/flower1.jpg" alt="">
+            <a href="#none">more view</a>
+          </div>
+
+          <div class="tab-box-flex2">
+            <img src="img/flower2.jpg" alt="">
+            <a href="#none">more view</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-------------- dedign 끝-------------->
+
+    <!-------------- styleing slide 시작-------------->
+
+    <div class="styleing">
+      <div class="styleing-box">
+        <div class="style-title">
+          <span>hi hello welcome</span>
+          <p class="sty-tit">
+            sky <br />
+            home style
+          </p>
+          <span class="bar"></span>
+          <span class="desc">인테리어 없이 가구, 페브릭, 조명, 소품 등 <br />
+            고객의 라이프 스타일에 맞게 1:1 상담을 통해<br />
+            공간을 연출해드립니다.<br><br>
+            스타일링 문의 : 01-0234-5678
+          </span>
+
+          <div class="style-btn">
+            <a href="#none">자세히 보기 <span>ㅡ</span></a>
+            <a href="#none">견적 문의하기<span>ㅡ</span></a>
+          </div>
+        </div>
+
+        <!-- 박스 슬라이드 -->
+        <div class="style-slide">
+          <div class="style-slide-box">
+            <div class="slide-box-home">
+              <ul class="home-slide">
+                <li>
+                  <a href="#none">
+                    <img src="img/cat1.jpg" alt="">
+                    <span class="num">01</span>
+                    <span class="name">sky kim</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#none">
+                    <img src="img/flower1.jpg" alt="">
+                    <span class="num">01</span>
+                    <span class="name">sky kim</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#none">
+                    <img src="img/flower2.jpg" alt="">
+                    <span class="num">01</span>
+                    <span class="name">sky kim</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#none">
+                    <img src="img/flower3.jpg" alt="">
+                    <span class="num">01</span>
+                    <span class="name">sky kim</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------- 탭2 시작-------------->
+
+    <div class="content-tab">
+      <div class="content-tab-box bg-none pro-main">
+        <div class="tab-title">
+          <p>prduct</p>
+          <span>탭을 만들어 봅시다</span>
+        </div>
+
+        <div class="tab-box pro-tab">
+          <!-- 텝 메뉴 -->
+          <a onclick="proclickbtn(0)" class="pro-btn pro-btns active">bed</a>
+          <a onclick="proclickbtn(1)" class="pro-btn">sofa</a>
+          <a onclick="proclickbtn(2)" class="pro-btn">table</a>
+          <a onclick="proclickbtn(3)" class="pro-btn">chair</a>
+          <a onclick="proclickbtn(4)" class="pro-btn">acc</a>
+        </div>
+
+        <div class="tab-bx">
+          <div class="tab-bx-full">
+            <ul class="pro-slide">
+
+              <!-- 베드 -->
+              <li class="pro-slide-item pro-slide-items">
+                <ul class="probox">
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <section class="info">
+                      <div class="thmub">
+                        <a href="#none">
+                          <img src="img/flower1.jpg" alt="">
+                        </a>
+                      </div>
+
+                      <div class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 가구]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </div>
+                    </section>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+
+
+              <!-- 소파 -->
+              <li class="pro-slide-item">
+                <ul class="probox">
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower2.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower2.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower2.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower2.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower2.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower2.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+
+              <!-- 테이블 -->
+              <li class="pro-slide-item">
+                <ul class="probox">
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <!-- <span class="sale-icon">10%</span> -->
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [신지호의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+
+              <!-- 의자 -->
+              <li class="pro-slide-item">
+                <ul class="probox">
+                  <li class="pro-item">
+                    <!-- <span class="sale-icon">10%</span> -->
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/cat1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/cat1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/cat1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/cat1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/cat1.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+
+              <!-- 악세서리 -->
+              <li class="pro-slide-item">
+                <ul class="probox">
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower2.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower2.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower2.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower2.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <span class="sale-icon">10%</span>
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower2.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="pro-item">
+                    <!-- <span class="sale-icon">10%</span> -->
+                    <ul class="info">
+                      <li>
+                        <div class="thmub">
+                          <a href="#none">
+                            <img src="img/flower2.jpg" alt="">
+                          </a>
+                        </div>
+                      </li>
+
+                      <li class="pro-name">
+                        <p><span>[파격특가]</span> [김하늘만의 침대디자인]</p>
+                        <p class="old">1,00,000</p>
+                        <p class="sale">900,000</p>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------- 매장 찾아오기 시작-------------->
+    <div class="store">
+      <img src="http://cherish2.godohosting.com/img/main_store1.png" alt="">
+      <span>store</span>
+      <span class="bar"></span>
+      <p>매장 찾아오기</p>
+      <a href="#none">
+        <img src="http://cherish2.godohosting.com/img/main_store2.png" alt="">
+      </a>
+    </div>
+
+
+    <!-------------- news 시작-------------->
+
+    <div class="content-tab news">
+      <div class="content-tab-box bg-none pro-main">
+        <div class="tab-title">
+          <p>new</p>
+          <span>뉴스를 시작 해봅시다</span>
+
+          <div class="tab-box pro-tab">
+            <a href="#none">+ more</a>
+          </div>
+        </div>
+
+        <div class="news-container">
+          <ul>
+            <li>
+              <div class="news-container-slide">
+                <div class="news-slide-box">
+                  <div class="news-item">
+                    <img class="news-slide-img" src="img/cat1.jpg" alt="">
+                  </div>
+                  <div class="news-item">
+                    <img class="news-slide-img" src="img/flower1.jpg" alt="">
+                  </div>
+                  <div class="news-item">
+                    <img class="news-slide-img" src="img/flower2.jpg" alt="">
+                  </div>
+                  <div class="news-item">
+                    <img class="news-slide-img" src="img/flower3.jpg" alt="">
+                  </div>
+                </div>
+
+                <div class="slide-news-btn">
+                  <button id="slide-news-btn-left"></button>
+                  <button id="slide-news-btn-right"></button>
+                </div>
+
+              </div>
+            </li>
+            <li class="news-li-box2">
+              <img src="img/flower1.jpg" alt="">
+            </li>
+            <li class="news-li-box3">
+              <img src="img/flower3.jpg" alt="">
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-------------- 인스타그램 시작-------------->
+
+    <div class="content-tab content-tab-height-800">
+      <div class="content-tab-box bg-none">
+        <div class="tab-title">
+          <p>instagram</p>
+          <span>instagram을 만들어 봅시다</span>
+        </div>
+        <div class="tab-box">
+
+        </div>
+      </div>
+    </div>
+
+    <!-- #wrapper -->
+  </div>
+</body>
+<script src="js/index.js"></script>
+
+</html>

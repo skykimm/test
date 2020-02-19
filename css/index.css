@@ -1,0 +1,1138 @@
+@charset "UTF-8";
+@import url("reset.css");
+
+/* ----------------------------------------------------------
+	공통 #wrapper
+---------------------------------------------------------- */
+
+#wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+/* ----------------------------------------------------------
+	공통 .header_wrap
+---------------------------------------------------------- */
+
+.header_wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  min-height: 100px;
+  background: #fff;
+  border-bottom: 1px solid #efefef;
+  opacity: 0.5;
+  transition: 0.5s;
+  z-index: 99999 !important;
+}
+
+.header_wrap:hover {
+  opacity: 1;
+}
+
+.header_wrap::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+/* ----------------------------------------------------------
+	공통 .header_wrap .header-gnb-top
+---------------------------------------------------------- */
+.header-gnb-top {
+  margin: auto;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #efefef;
+}
+
+/* ----------------------------------------------------------
+	공통 .header-gnb-top .header-gnb-box
+---------------------------------------------------------- */
+.header-gnb-box {
+  margin: 0 auto;
+  width: 1200px;
+  height: 100%;
+}
+
+.header-gnb-box ul {
+  text-align: right;
+}
+
+.header-gnb-box ul li {
+  display: inline-block;
+}
+
+.header-gnb-box ul li a {
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: 900;
+  color: #555;
+}
+
+.header-gnb-box ul li a+span {
+  color: #555;
+}
+
+.header-gnb-box ul li a:hover {
+  color: black;
+}
+
+/* ----------------------------------------------------------
+	공통 .header_wrap .header-gnb-bottom
+---------------------------------------------------------- */
+.header-gnb-bottom {
+  margin: auto;
+  width: 1200px;
+  height: 60px;
+}
+
+/* ----------------------------------------------------------
+	공통 .header_wrap .header-gnb-bottom .logo
+---------------------------------------------------------- */
+.header-gnb-bottom .logo {
+  margin-top: 22px;
+  display: inline-block;
+  width: 359px;
+  vertical-align: top;
+}
+
+/* ----------------------------------------------------------
+	공통 .header_wrap .header-gnb-bottom .gnb-menu
+---------------------------------------------------------- */
+.header-gnb-bottom .gnb-menu {
+  display: inline-block;
+  width: 741px;
+
+}
+
+.header-gnb-bottom .gnb-menu ul li {
+  display: inline-block;
+}
+
+.header-gnb-bottom .gnb-menu ul li a {
+  display: block;
+  padding: 27px 30px !important;
+  font-size: 14px;
+}
+
+.header-gnb-bottom .gnb-menu ul li a:hover {
+  color: red;
+}
+
+/* ----------------------------------------------------------
+	공통 .header_wrap .header-gnb-bottom .search
+---------------------------------------------------------- */
+.header-gnb-bottom .search {
+  display: inline-block;
+  position: relative;
+  padding: 18px 10px;
+  vertical-align: top;
+}
+
+.header-gnb-bottom .search a {
+  vertical-align: middle;
+}
+
+.header-gnb-bottom .search a img {
+  width: auto;
+  height: 21px;
+}
+
+/* ----------------------------------------------------------
+	공통 .header_wrap .header-gnb-bottom .search .search-form
+---------------------------------------------------------- */
+.header-gnb-bottom .search .search-form {
+  display: none;
+  position: absolute;
+  top: 61px;
+  right: -42px;
+  padding: 15px 25px 10px;
+  width: 320px;
+  height: 46px;
+  background: #fff;
+  z-index: 999;
+}
+
+.header-gnb-bottom .search .search-form form fieldset {
+  width: 290px;
+  height: 30px;
+  border: 1px solid #bbb;
+}
+
+/* ----------------------------------------------------------
+	.search-form input
+---------------------------------------------------------- */
+.search-form input {
+  width: 255px;
+  height: 30px;
+  line-height: 30px;
+  background-color: transparent;
+  border: 0;
+  color: #efefef;
+  font-size: 14px;
+}
+
+/* ----------------------------------------------------------
+	.search-form input img
+---------------------------------------------------------- */
+.search-form input.btn-search {
+  width: 18px;
+  height: auto;
+  border: 0;
+  margin-top: -4px;
+  cursor: pointer;
+}
+
+/* ----------------------------------------------------------
+	.search-form + a
+---------------------------------------------------------- */
+.search-form a.btn-close {
+  position: absolute;
+  top: 14px;
+  right: 21px;
+  font-size: 23px;
+  color: #000;
+}
+
+/* ----------------------------------------------------------
+	공통 .header_wrap .header-gnb-bottom .bag
+---------------------------------------------------------- */
+.header-gnb-bottom .bag {
+  display: inline-block;
+  position: relative;
+  padding: 18px 10px;
+  vertical-align: top;
+}
+
+.header-gnb-bottom .bag a {
+  vertical-align: middle;
+}
+
+.header-gnb-bottom .bag a img {
+  width: auto;
+  height: 21px;
+}
+
+/* ----------------------------------------------------------
+	공통 content-tab
+---------------------------------------------------------- */
+.content-tab {
+  width: 100%;
+  clear: both;
+}
+
+.content-tab::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.content-tab-height-800 {
+  height: 800px;
+}
+
+.content-tab-box {
+  padding: 50px 0 20px 0;
+  background: #efefef;
+}
+
+.tab-title {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 15px 0;
+  margin: 0 auto 40px auto;
+  width: 1200px;
+  border-bottom: 1px solid #bbb;
+}
+
+.tab-title p {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.tab-title span {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  position: relative;
+  top: 5px;
+  left: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.tab-box {
+  position: relative;
+  margin: auto;
+  width: 1200px;
+}
+
+.tab-box .tab-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 821px;
+  z-index: 999;
+}
+
+.tab-box .tab-menu a {
+  position: relative;
+  display: inline-block;
+  margin: 0 -5px 0 0;
+  width: 204px;
+  height: 42px;
+  line-height: 42px;
+  font-size: 14px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  cursor: pointer;
+}
+
+
+.tab-box .tab-menu a:hover {
+  background: #f7f7f9;
+  border-top: 2px solid black;
+}
+
+.tab-box .tab-menu a.active {
+  background: #f7f7f9;
+  border-top: 2px solid black;
+}
+
+.tab-bx {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0;
+  max-width: 100%;
+  clear: both;
+}
+
+.tab-bx-full {
+  position: relative;
+  width: 100%;
+}
+
+.tab-slide {
+  position: relative;
+  width: auto;
+  height: 481px;
+  overflow: hidden;
+}
+
+.tab-slide li.tab-open {
+  display: none;
+  position: absolute;
+  width: 1200px;
+  float: none;
+  z-index: 99;
+}
+
+.tab-slide li.tab-opens {
+  display: block;
+}
+
+.sub-img {
+  display: inline-block;
+  /* float: left; */
+}
+
+.sub-img a {
+  display: inline-block;
+}
+
+.sub-img a img {
+  display: block;
+  width: 342px;
+  height: 480px;
+  max-width: 100%;
+}
+
+.sub-item-box {
+  margin-top: 45px;
+  width: 819px;
+  height: 434px;
+  float: right;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background: #f7f7f9;
+}
+
+.sub-item-box ul {
+  margin: 50px auto 10px auto;
+  padding-left: 5px;
+  width: 790px;
+  font-size: 0;
+}
+
+.sub-item-box ul li {
+  position: relative;
+  display: inline-block;
+  padding: 0 1%;
+  width: 31%;
+  text-align: center;
+  vertical-align: top;
+}
+
+.sub-item-box ul li a {
+  display: block;
+  margin: 0 0 20px 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 240px;
+  border: 1px solid #ddd;
+}
+
+.sub-item-box ul li a img {
+  width: 100%;
+  height: 100%;
+}
+
+.sub-item-box ul li p {
+  display: block;
+  padding: 5px;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+  overflow: hidden;
+}
+
+.sub-item-box ul li p>span {
+  color: red;
+}
+
+p.old {
+  font-size: 14px;
+  color: #bababa;
+  text-decoration: line-through;
+}
+
+p.sale {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* ----------------------------------------------------------
+	.tab-box2
+---------------------------------------------------------- */
+.tab-box2 {
+  clear: both;
+  position: relative;
+  margin: 0 auto 25px auto;
+  width: 1200px;
+}
+
+.tab-box2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.tab-box2 img:hover {
+  opacity: 0.95;
+}
+
+.tab-box2 a {
+  position: absolute;
+  left: 40px;
+  bottom: 50px;
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  border: 1px solid #fff;
+}
+
+.tab-box2 a:hover {
+  background: #fff;
+  color: #000;
+}
+
+.tab-box-flex1,
+.tab-box-flex2 {
+  position: relative;
+  float: left;
+  width: 596px;
+  height: 295px;
+}
+
+.tab-box-flex2 {
+  margin-top: 7px;
+}
+
+/* ----------------------------------------------------------
+	design img right 고정
+---------------------------------------------------------- */
+.tab-box-flex-right {
+  position: relative;
+  float: right;
+  width: 598px;
+  height: 598px;
+  overflow: hidden;
+}
+
+.tab-box-flex-right a {
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  padding: 6px 30px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  border: 1px solid #fff;
+}
+
+/* ----------------------------------------------------------
+	tabmenu sale icon
+---------------------------------------------------------- */
+.sale-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 70px;
+  height: 70px;
+  background: #222;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 70px;
+  text-align: center;
+  z-index: 10;
+}
+
+/* ----------------------------------------------------------
+	main slider .main slide
+---------------------------------------------------------- */
+.main .slide-container {
+  position: relative;
+  margin: 100px auto 75px auto;
+  width: 100%;
+  height: 650px;
+  min-height: 650px;
+  max-width: 1920px !important;
+}
+
+.main .slide-container .slide-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main .slide-container .slide-item img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+/* ----------------------------------------------------------
+	main slider .main slide text
+---------------------------------------------------------- */
+.main .slide-container .slide-item .slide-text {
+  position: absolute;
+  top: 150px;
+  left: 5%;
+  width: 1200px;
+  color: #fff;
+  z-index: inherit;
+}
+
+.main .slide-container .slide-item .slide-text .s-title {
+  font-size: 16px;
+}
+
+.main .slide-container .slide-item .slide-text .hr {
+  margin: 20px 0;
+  display: block;
+  width: 30px;
+  height: 1px;
+  opacity: 0.4;
+  border-top: 1px solid #fff;
+}
+
+.main .slide-container .slide-item .slide-text .hr-none {
+  margin: 20px 0;
+  display: block;
+}
+
+.main .slide-container .slide-item .slide-text .m-title {
+  margin: 20px 0;
+  font-size: 80px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.main .slide-container .slide-item .slide-text .l-title {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+/* ----------------------------------------------------------
+	main slider .main slide dotted
+---------------------------------------------------------- */
+
+.dotcontainer {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  z-index: 999;
+  transform: translateX(-50%);
+}
+
+.dotbtn {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid red;
+  background: none;
+  margin: 0 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dotted {
+  background: red;
+}
+
+
+/* ----------------------------------------------------------
+	main slider .main slide buttom
+---------------------------------------------------------- */
+.slide-btn {
+  position: absolute;
+  left: 5%;
+  bottom: 110px;
+  width: 1200px;
+  height: 78px;
+  z-index: 99;
+}
+
+.slide-btn button {
+  position: relative;
+  width: 78px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  cursor: pointer;
+}
+
+button#slide-btn-left::before {
+  content: "";
+  display: inline-block;
+  clear: both;
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  transform: rotate(-45deg);
+}
+
+button#slide-btn-right::before {
+  content: "";
+  display: inline-block;
+  clear: both;
+  position: absolute;
+  top: 28px;
+  left: 28px;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+
+.slide-btn button:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* ----------------------------------------------------------
+  styleing
+---------------------------------------------------------- */
+.styleing {
+  padding: 100px 0;
+  min-width: 1200px;
+  min-height: 450px;
+  background-color: #333;
+}
+
+.styleing-box {
+  margin: auto;
+  position: relative;
+  width: 1200px;
+}
+
+.style-title {
+  width: 430px;
+}
+
+.style-title span {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.style-title p.sty-tit {
+  display: block;
+  margin-top: 30px;
+  font-size: 44px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.style-title span.bar {
+  margin: 35px 0;
+  width: 85px;
+  height: 1px;
+  border-top: 2px solid #ccc;
+}
+
+.style-title span.desc {
+  font-size: 14px;
+  color: #818181;
+  line-height: 25px;
+}
+
+.style-btn {
+  position: absolute;
+  left: 0;
+  bottom: -70px;
+}
+
+.style-btn a {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0 12px 0 0;
+  display: inline-block;
+  padding: 0 12px;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 148px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.style-btn a:hover {
+  background: #f7f7f9;
+  color: #000;
+}
+
+.style-btn a:hover span {
+  color: #000;
+}
+
+.style-btn a span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+/* ----------------------------------------------------------
+  main style slide
+---------------------------------------------------------- */
+.style-slide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 735px;
+}
+
+.style-slide-box {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0;
+  max-width: 1110px;
+}
+
+.slide-box-home {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+}
+
+ul.home-slide {
+  position: relative;
+  width: 515%;
+  transition-duration: 0s;
+  transform: translate3d(-1520px 0 0);
+}
+
+ul.home-slide li {
+  position: relative;
+  margin-right: 30px;
+  width: 350px;
+  height: 450px;
+  float: left;
+  overflow: hidden;
+}
+
+ul.home-slide li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+ul.home-slide li a img {
+  max-width: none !important;
+  width: 100%;
+  height: 100%;
+}
+
+ul.home-slide li a span.num {
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  bottom: 35px;
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+ul.home-slide li a span.name {
+  position: absolute;
+  right: 20px;
+  bottom: 35px;
+  width: 238px;
+  height: 65px;
+  line-height: 65px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  letter-spacing: 1px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* ----------------------------------------------------------
+ product
+---------------------------------------------------------- */
+.pro-main {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  height: 1211px;
+  clear: both;
+}
+
+.pro-tab {
+  width: auto;
+  position: absolute;
+  top: 65px;
+  right: 0;
+  z-index: 999;
+}
+
+.pro-tab a {
+  display: inline-block;
+  width: 70px;
+  font-size: 15px;
+  border-left: 1px solid #ddd;
+  color: #888;
+  text-align: center;
+  cursor: pointer;
+}
+
+.pro-tab a:first-child {
+  border-left: 0;
+}
+
+.pro-tab a.active {
+  color: red;
+}
+
+ul .pro-slide {
+  position: relative;
+  width: auto;
+}
+
+ul.pro-slide li.pro-slide-item {
+  position: absolute;
+  display: none;
+  width: 1200px;
+  float: none;
+}
+
+ul.pro-slide li.pro-slide-items {
+  display: block;
+}
+
+.probox {
+  width: 1280px;
+}
+
+.pro-item {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  width: 29.3%;
+  vertical-align: top;
+}
+
+.thmub {
+  margin-bottom: 10px;
+  width: 380px;
+  height: 380px;
+}
+
+.thmub a img {
+  max-width: 380px;
+  width: 100%;
+  height: 100%;
+}
+
+.pro-name {
+  margin-bottom: 15px;
+  padding: 2px 0 5px;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.pro-name p:first-child {
+  border-bottom: 1px solid #ddd;
+  padding: 5px 0;
+}
+
+.pro-name p span {
+  color: red;
+}
+
+/* ----------------------------------------------------------
+  store
+---------------------------------------------------------- */
+.store {
+  padding: 70px 0;
+  position: relative;
+  width: 100%;
+  height: 410px;
+  min-width: 1200px;
+  clear: both;
+  text-align: center;
+  background-image: url(../img/moon.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center top;
+}
+
+.store span {
+  display: block;
+  padding: 15px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.store span.bar {
+  width: 33px;
+  height: 1px;
+  border-top: 1px solid #000;
+  margin: 15px auto 0 auto;
+  padding: 0;
+}
+
+.store p {
+  display: block;
+  padding: 30px;
+  font-size: 35px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+.store a {
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+}
+
+.store a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* ----------------------------------------------------------
+  news
+---------------------------------------------------------- */
+.news .pro-main {
+  height: 430px !important;
+  margin-bottom: 50px;
+}
+
+.news .pro-tab {
+  top: 20px;
+}
+
+.news-container {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+  height: 350px;
+}
+
+.news-container ul li {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  height: 350px;
+  float: left;
+}
+
+.news-container-slide {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  min-height: 350px;
+}
+
+.news-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.news-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide-news-btn {
+  position: absolute;
+  bottom: 68px;
+}
+
+
+#slide-news-btn-left {
+  position: absolute;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+#slide-news-btn-right {
+  position: absolute;
+  left: 67px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+button#slide-news-btn-left::before {
+  content: "";
+  display: inline-block;
+  clear: both;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 15px;
+  height: 15px;
+  color: #fff;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  transform: rotate(-45deg);
+}
+
+button#slide-news-btn-right::before {
+  content: "";
+  display: inline-block;
+  clear: both;
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  width: 15px;
+  height: 15px;
+  color: #fff;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+
+.slide-news-btn button:hover {
+  background: rgba(0, 0, 0, 0.);
+}
+
+.news-li-box2 img,
+.news-li-box3 img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ----------------------------------------------------------
+  공통 css
+---------------------------------------------------------- */
+.bg-none {
+  background: none;
+}
+
+.mt0 {
+  margin-top: 0 !important;
+}
+
+.mb0 {
+  margin-bottom: 0 !important;
+}
+
+/* ----------------------------------------------------------
+	script showing *맨 마지막 css*
+---------------------------------------------------------- */
+.showing {
+  opacity: 1;
+  z-index: 99;
+}
+
+.showing2 {
+  opacity: 1;
+  z-index: 99;
+}
+
+
+/* http: //www.cgagu.com/#none */
